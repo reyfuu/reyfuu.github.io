@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+
     <!-- logo -->
     <script src="https://kit.fontawesome.com/a2b0992166.js" crossorigin="anonymous"></script>
     <!-- Font -->
@@ -16,17 +18,18 @@
 <body>
     <header>
         <div class="logo">
-            <h1 class="logo-text"><span>Smart</span>hink</h1>
+            <h1 class="logo-text" id="logo"><span>Smart</span>hink</h1>
         </div>
         
         <ul class="nav">
             <i class="fa fa-bars menu-toggle"></i>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <!-- <li><a href="#">Login</a></li> -->
-            <!-- <li><a href="#">Sign</a></li> -->
-            <li><a href="#">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="price.html">Price</a></li>
+            <!-- <li><a href="#about">About</a></li>
+            <li><a href="#">Services</a></li> -->
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Sign</a></li>
+            <!-- <li><a href="#">
                     <i class="fa fa-user"></i>
                     Smarthink
                     <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
@@ -35,7 +38,7 @@
                     <li><a href="#">Dashboard</a></li>
                     <li><a href="#" class="logout">Logout</a></li>
                 </ul>
-            </li>
+            </li> -->
         </ul>
     </header>
     <div class="auth-content">
@@ -43,19 +46,19 @@
             <h2 class="form-title">Register</h2>
             <div>
                 <label >Username</label><br>
-                <input type="text" name="username" class="text-input">
+                <input type="text" name="username" class="text-input" id="name"required class="validate">
             </div>
             <div>
                 <label >Email</label><br>
-                <input type="text" name="email" class="text-input">
+                <input type="text" name="email" class="text-input" id="email" required class="validate">
             </div>
             <div>
                 <label >Password</label><br>
-                <input type="text" name="password" class="text-input">
+                <input type="text" name="password" class="text-input" id="password" required class="validate">
             </div>
             <div>
                 <label >Password Conformation</label><br>
-                <input type="text" name="passwordConf" class="text-input">
+                <input type="text" name="passwordConf" class="text-input" id="passwordConf" required class="validate">
             </div>
             <div>
                 <button type="submit" name="register-button "class="btn btn-big">Register</button>
@@ -69,6 +72,7 @@
         crossorigin="anonymous"></script>
     <!-- Custom SCript -->
     <script src="script.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </body>
 
 </html>
