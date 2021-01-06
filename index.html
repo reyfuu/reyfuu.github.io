@@ -19,7 +19,7 @@
 <body id="home" class="scrollspy">
     <header>
         <div class="logo">
-            <h1 class="logo-text" id="logo"><span>Smart</span>hink</h1>
+            <a href="index.html"><h1 class="logo-text" id="logo"><span>Smart</span>hink</h1></a>
         </div>
         
         <ul class="nav">
@@ -183,6 +183,20 @@
         M.ScrollSpy.init(scroll,{
             scrollOffset:-40,
         });
+        $(document).ready(function(){
+    $('.menu-toggle').on('click',function(){
+        $('.nav').toggleClass('showing');
+        $('.nav ul').toggleClass('showing');
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems, options);
+});
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems, options);
+ });
     </script>
 </body>
 
